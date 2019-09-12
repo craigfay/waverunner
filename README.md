@@ -1,6 +1,17 @@
-# Usage
+# Testing should be easy!
 
-### Step 1:
+Let's get a Javascript test suite running in 30 seconds.
+Here's what test results will look like in our console:
+
+```
+multipleTermsTest: 0.79 ms ok
+decimalTermsTest: 0.04 ms ok
+negativeTermsTest: 0.03 ms ok
+nonNumericTermsTest: 0.21 ms ok
+testSuite: 3.19 ms ok
+```
+
+## Step 1:
 Create a module that you'd like to conduct tests on.
 We'll use an addition module that adds numbers together, and name it `addition.js`.
 
@@ -14,8 +25,8 @@ module.exports.addition = function addition(...terms) {
 }
 ```
 
-### Step 2:
-Introduce another module that imports the first, called `addition.test.js`.
+## Step 2:
+Introduce a test module that imports `addition.js`, called `addition.test.js`.
 Writing tests is extremely simple, because there's only two rules to follow:
 * A "test" is any function, that will throw an `Error` object to indicate failure. 
 * All test modules, like `addition.test.js` must export an Array of test functions,
@@ -54,10 +65,8 @@ module.exports.tests = [
 ]
 ```
 
-### Step 3:
-Add a single entrypoint module that will execute all the tests you include.
-We like this, because tests run top-to-bottom in the order they're included,and nothing runs without your explicit say so.
-Use `node test.js` to kick things off.
+## Step 3:
+Add `test.js`, which will be an entrypoint for the entire test suite. Use `node test.js` to kick things off.
 
 ```javascript
 // test.js
@@ -67,3 +76,8 @@ run(testSuite(
   require('./addition.test')
 ));
 ```
+
+## Why Tinyrunner?
+* All tests run top-to-bottom in the order they're included.
+* Nothing runs without your explicit say so.
+* No extra abstraction layers to learn. Just throw an Error.
