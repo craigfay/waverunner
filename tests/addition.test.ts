@@ -1,4 +1,4 @@
-import { strict as assert } from 'assert'
+const { strict: assert } = require('assert')
 
 function addition(...terms) {
   return terms.reduce((total, term) => {
@@ -26,7 +26,7 @@ function nonNumericTermsTest() {
   assert.throws(() => addition(5, '5'))
 }
 
-export const tests = [
+module.exports.tests = [
   multipleTermsTest,
   decimalTermsTest,
   negativeTermsTest,
