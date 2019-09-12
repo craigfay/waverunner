@@ -77,7 +77,7 @@ run(testSuite(
 ));
 ```
 
-## Why Tinyrunner?
+## Why Tinyrunner? 🧠
 * All tests run top-to-bottom in the order they're included.
 * Nothing runs without your explicit say so.
 * No extra abstraction layers to learn. Just throw an Error.
