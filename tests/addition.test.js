@@ -1,12 +1,5 @@
 const { strict: assert } = require('assert')
 
-function addition(...terms) {
-  return terms.reduce((total, term) => {
-    if (typeof term !== 'number') throw new Error('Unsupported non-numeric addition')
-    return term += total
-  })
-}
-
 function multipleTermsTest() {
   if (addition(5, 5, 5) !== 15)
   throw new Error('Addition with multiple terms must work')
