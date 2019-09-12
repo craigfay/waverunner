@@ -1,0 +1,25 @@
+{
+  "name": "tinyrunner",
+  "version": "0.0.0",
+  "description": "A test runner you can take home to your parents",
+  "main": "dist/main.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "npx tsc",
+    "test": "ts-node src/test.ts",
+    "watch": "nodemon --ext .ts --exec 'npm run test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-scarlet/http.git"
+  },
+  "keywords": [],
+  "author": "craig fay",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.5.3",
+    "@types/node": "^12.6.8",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^1.19.1"
+  }
+}
