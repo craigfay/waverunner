@@ -1,4 +1,4 @@
-# Testing should be easy!
+# Testing should be easy! 💆‍♂️
 
 Let's get a Javascript test suite running in 30 seconds.
 Here's what test results will look like in our console:
