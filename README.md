@@ -11,7 +11,7 @@ nonNumericTermsTest: 0.21 ms ok
 testSuite: 3.19 ms ok
 ```
 
-## Step 1:
+## Step 1: ☝️
 Create a module that you'd like to conduct tests on.
 We'll use an addition module that adds numbers together, and name it `addition.js`.
 
@@ -25,7 +25,7 @@ module.exports.addition = function addition(...terms) {
 }
 ```
 
-## Step 2:
+## Step 2: ✌️
 Introduce a test module that imports `addition.js`, called `addition.test.js`.
 Writing tests is extremely simple, because there's only two rules to follow:
 * A "test" is any function, that will throw an `Error` object to indicate failure. 
@@ -65,7 +65,7 @@ module.exports.tests = [
 ]
 ```
 
-## Step 3:
+## Step 3: 🤟
 Add `test.js`, which will be an entrypoint for the entire test suite. Use `node test.js` to kick things off.
 
 ```javascript
