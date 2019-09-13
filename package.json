@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "A test runner you can take home to your parents",
   "main": "dist/main.js",
-  "tags": [
+  "keywords": [
     "unit",
     "test",
     "runner"
