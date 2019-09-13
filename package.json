@@ -1,9 +1,15 @@
 {
   "name": "waverunner",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A test runner you can take home to your parents",
   "main": "dist/main.js",
-  "keywords": ["unit", "test", "tests", "testing", "runner"],
+  "keywords": [
+    "unit",
+    "test",
+    "tests",
+    "testing",
+    "runner"
+  ],
   "scripts": {
     "prepublish": "npm run build",
     "build": "npx tsc",
