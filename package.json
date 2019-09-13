@@ -1,5 +1,5 @@
 {
-  "name": "tinyrunner",
+  "name": "waverunner",
   "version": "0.0.0",
   "description": "A test runner you can take home to your parents",
   "main": "dist/main.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/craigfay/tinyrunner.git"
+    "url": "git+https://github.com/craigfay/waverunner.git"
   },
   "keywords": [],
   "author": "craig fay",

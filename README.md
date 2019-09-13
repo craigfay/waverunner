@@ -1,4 +1,4 @@
-# Testing should be easy! 💆‍♂️
+# Testing should be easy! 🏄‍♀️
 
 Let's get a Javascript test suite running in 30 seconds.
 Here's what test results will look like in our console:
@@ -77,7 +77,7 @@ run(testSuite(
 ));
 ```
 
-## Why Tinyrunner? 🧠
+## Why Waverunner? 🧠
 * All tests run top-to-bottom in the order they're included.
 * Nothing runs without your explicit say so.
 * No extra abstraction layers to learn. Just throw an Error.
