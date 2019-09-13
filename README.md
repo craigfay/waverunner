@@ -70,7 +70,7 @@ Add `test.js`, which will be an entrypoint for the entire test suite. Use `node 
 
 ```javascript
 // test.js
-const { run, testSuite } = require('tinyrunner');
+const { run, testSuite } = require('waverunner');
 
 run(testSuite(
   require('./addition.test')
