@@ -1,6 +1,6 @@
 {
   "name": "waverunner",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A test runner you can take home to your parents",
   "main": "dist/main.js",
   "keywords": [
