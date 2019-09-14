@@ -29,14 +29,13 @@ module.exports.addition = function addition(...terms) {
 Introduce a test module that imports `addition.js`, called `addition.test.js`.
 Writing tests is extremely simple, because there's only two rules to follow:
 * A "test" is any function, that will throw an `Error` object to indicate failure. 
-* All test modules, like `addition.test.js` must export an Array of test functions,
+* All test modules, like `addition.test.js` should export an Array of test functions,
 named `tests`. Easy right?
 
 
 ```javascript
 // addition.test.js
 const { addition } = require('./addition')
-const { strict: assert } = require('assert')
 
 function multipleTermsTest() {
   if (addition(5, 5, 5) !== 15)
@@ -54,6 +53,8 @@ function negativeTermsTest() {
 }
 
 function nonNumericTermsTest() {
+  // We can use the assert module if we'd like
+  const assert = require('assert')
   assert.throws(() => addition(5, '5'))
 }
 
@@ -66,14 +67,16 @@ module.exports.tests = [
 ```
 
 ## Step 3: 🤟
-Add `test.js`, which will be an entrypoint for the entire test suite. Use `node test.js` to kick things off.
+Add `test.js`, which will be an entrypoint for the entire test suite.
+pass any number of modules into `testSuite()`, and use `node test.js` to kick things off.
 
 ```javascript
 // test.js
 const { run, testSuite } = require('waverunner');
 
 run(testSuite(
-  require('./addition.test')
+  require('./addition.test'),
+  // require('./any-other.test'),
 ));
 ```
 
