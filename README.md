@@ -68,7 +68,7 @@ module.exports.tests = [
 
 ## Step 3: 🤟
 Add `test.js`, which will be an entrypoint for the entire test suite.
-pass any number of modules into `testSuite()`, and use `node test.js` to kick things off.
+Pass any number of modules into `testSuite()`, and use `node test.js` to kick things off.
 
 ```javascript
 // test.js
