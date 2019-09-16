@@ -1,7 +1,7 @@
 {
   "name": "waverunner",
   "version": "0.2.2",
-  "description": "A test runner you can take home to your parents",
+  "description": "The test runner you always wanted, but didn't know how to ask for.",
   "main": "dist/main.js",
   "keywords": [
     "unit",
