@@ -35,11 +35,11 @@ async function runWithTimer(fn) {
 export function testSuite(...modules) {
   return modules.reduce((included, m) => {
     return [...included, ...m.tests]
-  }, [])
+  }, []);
 }
 
 // A "test" is any function that throws an error to indicate failure
-export async function run(...tests) {
+export async function run(tests:Array<(...args:any) => any>) {
   runWithTimer(async function testSuite() {
     for (const test of tests) {
       await runWithTimer(test)
